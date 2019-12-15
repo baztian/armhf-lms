@@ -25,3 +25,8 @@ docker run -d \
   -p 3483:3483/udp \
   baztian/rpi-lms:7.9.2-1561089896
 ```
+
+## Development
+
+    git tag $(grep -oP 'LMS_URL=.*logitechmediaserver_\K[\d.~-]+' Dockerfile)-$(git rev-parse --short HEAD)
+    git push && git push --tags
