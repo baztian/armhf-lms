@@ -28,5 +28,5 @@ docker run -d \
 
 ## Development
 
-    git tag $(grep -oP 'LMS_URL=.*logitechmediaserver_\K[\d.~-]+' Dockerfile)-$(git rev-parse --short HEAD)
+    git tag $(grep -oP 'LMS_URL=.*logitechmediaserver_\K[\d.~-]+' Dockerfile|tr \~ -)-$(git rev-parse --short HEAD)
     git push && git push --tags
