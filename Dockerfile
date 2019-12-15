@@ -1,5 +1,7 @@
 FROM resin/rpi-raspbian:jessie
 
+# Updates at http://downloads-origin.slimdevices.com/nightly/?ver=7.9
+
 ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
 	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver \
 	LANG=C.UTF-8 \
