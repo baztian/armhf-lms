@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian:jessie
+FROM balenalib/raspberry-pi-debian:buster
 
 # Updates at http://downloads-origin.slimdevices.com/nightly/
 
