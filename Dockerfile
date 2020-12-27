@@ -1,11 +1,11 @@
-FROM resin/rpi-raspbian:jessie
+FROM balenalib/raspberry-pi-debian:jessie
 
-# Updates at http://downloads-origin.slimdevices.com/nightly/?ver=7.9
+# Updates at http://downloads-origin.slimdevices.com/nightly/
 
-ENV    SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
+ENV SQUEEZE_VOL_PERSIST=/var/lib/squeezeboxserver \
 	SQUEEZE_VOL_LOG=/var/log/squeezeboxserver \
 	LANG=C.UTF-8 \
-	LMS_URL=http://downloads-origin.slimdevices.com/nightly/7.9/sc/0116432ea65227ec1453cb70cf0226019f325d29/logitechmediaserver_7.9.2~1576322676_arm.deb
+	LMS_URL=http://downloads-origin.slimdevices.com/nightly/8.2/lms/c3214d4a15c351fa7272fa052f5d1df365e10ad8/logitechmediaserver_8.2.0~1609049500_arm.deb
 
 RUN apt-get update && \
     apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox libio-socket-ssl-perl && \

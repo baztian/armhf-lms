@@ -23,7 +23,7 @@ docker run -d \
   -p 9000:9000 \
   -p 3483:3483 \
   -p 3483:3483/udp \
-  baztian/rpi-lms:7.9.2-1561089896
+  baztian/rpi-lms:8.2.0-1609049500
 ```
 
 ## Development

@@ -3,7 +3,7 @@
 
 # lms image tag
 # (Nightly)
-VERSION=7.9.2-1561089896
+VERSION=8.2.0-1609049500
 DOCKERHUBUSER=baztian
 REPONAME=armhf-lms
 
